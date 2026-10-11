@@ -1,0 +1,6 @@
+data "oci_database_management_external_exadata_storage_server_top_sql_cpu_activity" "database_management_external_exadata_storage_server_top_sql_cpu_activity_lookup" {
+  for_each = var.database_management_external_exadata_storage_server_top_sql_cpu_activity_lookup
+
+  external_exadata_storage_server_id = each.value.external_exadata_storage_server_id
+}
+
